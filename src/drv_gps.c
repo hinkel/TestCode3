@@ -708,7 +708,7 @@ reset:
             IRQGPS_coord[LAT] = buffer.posllh.latitude;
             IRQGPS_coord[LON] = buffer.posllh.longitude;
             GPS_altitude = buffer.posllh.altitude_msl / 1000;                       // alt in m we don't buffer GPS_altitude since it not of importance
-            GPS_time = _buffer.posllh.time;                       // UTC mstow - haydent // Shikra OSD patch
+            GPS_time = buffer.posllh.time;                       // UTC mstow - haydent // Shikra OSD patch
             GPS_FIX = nextfx;
             newpos    = true;
             break;
