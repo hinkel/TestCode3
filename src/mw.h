@@ -191,6 +191,7 @@ enum   // This is limited to 32 Boxes!!
     BOXBEEPERON,
     BOXHEADADJ,
     BOXOSD,
+    BOXFAILSAFE,
     BOXGTUNE,
     CHECKBOXITEMS
 };
@@ -210,6 +211,7 @@ static const char boxnames[] =
     "BEEPER;"
     "HEADADJ;"
     "OSD SW;"
+    "FAILSAFE;"
     "GTUNE;";
 
 static const char pidnames[] =
@@ -471,6 +473,7 @@ typedef struct flags_t
     uint8_t PASSTHRU_MODE;
     uint8_t GPS_FIX_HOME;
     uint8_t SMALL_ANGLES_25;
+    uint8_t FAILSAFE;
     uint8_t GTUNE;
 } flags_t;
 
