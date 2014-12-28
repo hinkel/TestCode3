@@ -566,6 +566,7 @@ extern uint8_t  GPS_update;                 // it's a binary toogle to distinct 
 extern float    GPS_angle[2];               // it's the angles that must be applied for GPS correction
 extern float    Last_GPS_angle[2];
 extern uint16_t GPS_ground_course;          // degrees*10
+extern uint32_t GPS_time;                   // UTC time of coord calc - haydent // Shikra OSD time
 extern float    nav[2];
 extern int8_t   nav_mode;                   // Navigation mode
 extern int8_t   wp_status;
