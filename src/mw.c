@@ -70,6 +70,7 @@ uint8_t  GPS_update = 0;                                             // it's a b
 float    GPS_angle[2] = {0, 0};                                      // it's the angles that must be applied for GPS correction
 float    Last_GPS_angle[2] = {0, 0};
 uint16_t GPS_ground_course = 0;                                      // DEG * 10
+uint32_t GPS_time;                                                   // UTC time of coord calc - haydent // Shikra OSD time
 float    nav[2];                                                     // DEG * 100
 int16_t  maxbank10  = 1;                                             // Maximum GPS Tiltangle in degree * 10 // preset to 1 for safety to prevent div 0
 int16_t  maxbank100 = 1;                                             // Maximum GPS Tiltangle in degree * 100
