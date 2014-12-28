@@ -269,10 +269,11 @@ static void evaluateCommand(void)
         serialize16(GPS_speed);
         break;
     case MSP_COMP_GPS:
-        headSerialReply(5);
+        headSerialReply(9);
         serialize16(GPS_distanceToHome);
         serialize16(GPS_directionToHome);
         serialize8(GPS_update & 1);
+        serialize32(GPS_time);               // UTC time of coord calc - haydent // Shikra OSD time
         break;
     case MSP_ATTITUDE:
         headSerialReply(8);
