@@ -141,10 +141,10 @@ const clicmd_t cmdTable[] =
 
 const clivalue_t valueTable[] =
 {
-    { "rc_db",                     VAR_UINT8,  &cfg.rc_db,                       0,         32, 1 },
-    { "rc_dbyw",                   VAR_UINT8,  &cfg.rc_dbyw,                     0,        100, 1 },
-    { "rc_dbah",                   VAR_UINT8,  &cfg.rc_dbah,                     1,        100, 1 },
-    { "rc_dbgps",                  VAR_UINT8,  &cfg.rc_dbgps,                    0,        100, 1 },
+    { "rc_db",                     VAR_UINT8,  &cfg.rc_db,                       0,        100, 1 },
+    { "rc_dbyw",                   VAR_UINT8,  &cfg.rc_dbyw,                     0,        200, 1 },
+    { "rc_dbah",                   VAR_UINT8,  &cfg.rc_dbah,                     1,        250, 1 },
+    { "rc_dbgps",                  VAR_UINT8,  &cfg.rc_dbgps,                    0,        200, 1 },
     { "rc_trm_rll",                VAR_FLOAT,  &cfg.angleTrim[ROLL],          -300,        300, 1 },
     { "rc_trm_ptch",               VAR_FLOAT,  &cfg.angleTrim[PITCH],         -300,        300, 1 },
     { "rc_minchk",                 VAR_UINT16, &cfg.rc_minchk,                1001,       1250, 0 },
