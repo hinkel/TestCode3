@@ -1647,6 +1647,8 @@ static void ChkFailSafe(void)
     if (!failsafeCnt) GoodRCcnt = min(GoodRCcnt + 1, 250);                  // Increase goodcount while failcount is zero
     else GoodRCcnt = 0;
     failsafeCnt++;                                                          // reset to 0 by RC driver on Signal
+    if (failsafeCnt > 2)f.FAILSAFE = 1;                                     // Failsafe info for minimosd
+       else f.FAILSAFE = 0;	
 }
 
 /*
